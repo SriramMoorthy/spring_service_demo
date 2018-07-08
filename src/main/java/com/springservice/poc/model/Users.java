@@ -1,4 +1,4 @@
-package com.capgemini.poc.model;
+package com.springservice.poc.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
