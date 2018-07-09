@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.springservice.poc.jpa.UserJpaRepository;
+import com.springservice.poc.jpa.UserRepository;
 import com.springservice.poc.model.Users;
 
 @RestController
@@ -18,7 +18,7 @@ import com.springservice.poc.model.Users;
 public class UsersController {
 
 	@Autowired
-	private UserJpaRepository userJpaRepository;
+	private UserRepository userJpaRepository;
 	
 	@GetMapping(value="/all")
 	public List<Users> findAll(){

@@ -5,8 +5,12 @@ import org.springframework.stereotype.Component;
 
 import com.springservice.poc.model.Users;
 
+/** 
+ * This component persists user information in the database.
+ * @author Sriram Moorthy
+*/
 @Component
-public interface UserJpaRepository extends JpaRepository<Users, Long>{
+public interface UserRepository extends JpaRepository<Users, Long>{
 
 	Users findByName(String name);
 
